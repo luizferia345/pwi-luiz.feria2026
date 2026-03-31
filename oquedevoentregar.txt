@@ -1,8 +1,0 @@
-- Projeto de Banco X...
-
-- Arquivo .DOCx
-
-	- Capa (Com seu nome)
-	- historia do cliente
-	- Relação de Entidade
-	- Diagrama de Entidade Relacionamento
