@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17, 105, 83);
+    padding: 25px;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+}
+.menu-link a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    margin-left: 20px;
+}
+.menu-link a:hover{
+    color: rgb(221, 101, 31);
+    background-color: rgb(243, 209, 178);
+    padding: 5px;
+    border-radius: 5px;
+}
+body{
+    background-color: aquamarine;
+
+}
+h1{
+    color: red;
+    text-align: center;
+}
+p{
+    color: green;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+}
