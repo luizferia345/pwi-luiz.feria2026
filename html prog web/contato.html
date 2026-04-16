@@ -1,43 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head><meta charset="UTF-8"><title>Contato</title></head>
-<body style="margin:0; font-family:Arial; background:#f2f2f2;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Canolli Vianna</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-<header style="background:#eaeaea; padding:10px; border-bottom:2px solid #ccc;">
-    <img src="imagens/logo.png" width="40">
-    <nav style="float:right;">
-        <a href="index.html">Inicio</a>
-        <a href="sobre.html">Sobre</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="cardapio.html">Cardápio</a> |
-        <a href="trabalhe.html">Trabalhe Conosco</a> |
-        <a href="login.html">Login 🔒</a>
-</header>
+  <header>
+    <div class="container">
+      <h1>Canolli Vianna</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="Cardapio.html">Cardápio</a></li>
+          <li><a href="Trabalhe.html">Trabalhe Conosco</a></li>
+          <li><a href="login.html">Login 🔒</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main style="padding:20px; display:flex; gap:20px;">
+  <section class="hero">
+    <h2>Fale Conosco</h2>
+    <p>Estamos prontos para te atender 📞</p>
+  </section>
 
-<div style="width:50%; background:rgb(247, 190, 190); padding:20px;">
-    <p>Rua Hipodromo n ° 65 </p>
-        <p> Bairro: Centro - São Paulo - SP</p>
-       <p> @CanolliVianna </p>
-       <p>11-94765-4863</p>
-</div>
+  <section class="menu">
+    <div class="container">
+      <div class="menu-grid">
 
-<div style="width:50%; background:white; padding:20px;">
-    <form>
-        <input type="text" placeholder="Nome"><br><br>
-        <input type="email" placeholder="Email"><br><br>
-        <input type="text" placeholder="Telefone"><br><br>
-        <textarea placeholder="Mensagem"></textarea><br><br>
-        <button>Enviar</button>
-    </form>
-</div>
+        <div class="menu-card" style="text-align: left;">
+          <h4>📍 Endereço</h4>
+          <p>Rua Hipódromo, nº 65</p>
+          <p>Bairro: Centro — São Paulo, SP</p>
+          <br>
+          <h4>📱 Redes Sociais</h4>
+          <p>@CanolliVianna</p>
+          <br>
+          <h4>📞 Telefone</h4>
+          <p>(11) 94765-4863</p>
+        </div>
 
-</main>
+        <div class="menu-card" style="text-align: left;">
+          <h4>Envie uma Mensagem</h4>
+          <form style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+            <input type="text" placeholder="Nome" style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+            <input type="email" placeholder="Email" style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+            <input type="text" placeholder="Telefone" style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+            <textarea placeholder="Mensagem" rows="4" style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+            <button type="button" style="background: #ffd700; color: #1d1d1d; padding: 0.75rem; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Enviar</button>
+          </form>
+        </div>
 
-<footer style="background:#1f2d3d; color:white; text-align:center; padding:20px;">
-    tiktok | face | insta | in | whats
-</footer>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h5>Canolli Vianna</h5>
+        <p>A melhor experiência italiana da cidade.</p>
+      </div>
+      <div>
+        <h5>Links</h5>
+        <p><a href="sobre.html">Sobre nós</a></p>
+        <p><a href="Cardapio.html">Cardápio</a></p>
+        <p><a href="contato.html">Contato</a></p>
+      </div>
+      <div>
+        <h5>Redes Sociais</h5>
+        <div class="socials">
+          <a href="#">TK</a>
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">IN</a>
+          <a href="#">WA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -1,0 +1,231 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* BASE */
+body{
+  font-family: Arial, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  color:#111;
+  background:#f8e5e5bd;
+}
+
+/* LINKS */
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* HEADER MENU SUPERIOR */
+header{
+  background:#000000;
+  padding:1rem 2rem;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  border-bottom:2px solid #ffd700;
+}
+
+header .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* LOGO ESQUERDA */
+header h1{
+  color:#ffffff;
+  font-size:1.8rem;
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+/* MENU */
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:2rem;
+}
+
+nav ul li a{
+  color:#ffffff;
+  font-weight:600;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#ffd700;
+}
+
+/* HERO */
+.hero{
+  background:
+  linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.35)),
+  url('https://images.unsplash.com/photo-1629803868284-1d6362e4e7aa')
+  no-repeat center center/cover;
+
+  padding:7rem 2rem;
+  text-align:center;
+  border-bottom:2px solid #000;
+}
+
+/* TITULOS */
+h2,h3,h4,h5{
+  color:#000;
+  font-weight:900;
+  font-style:italic;
+  text-shadow:2px 2px 6px rgba(0,0,0,0.25);
+}
+
+.hero h2{
+  font-size:3rem;
+}
+
+/* SEÇÕES */
+section{
+  padding:4rem 2rem;
+}
+
+/* CONTAINERS COM CONTORNO */
+.container,
+.menu-card,
+.login-box,
+footer .container{
+  border:1px solid #000;
+  border-radius:14px;
+}
+
+/* MENU */
+.menu{
+  background:#fae7e7c2;
+}
+
+.menu h3{
+  text-align:center;
+  margin-bottom:2rem;
+  font-size:2rem;
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:2rem;
+}
+
+.menu-card{
+  background:#f5e7e7c7;
+  padding:2rem;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.menu-card:hover{
+  transform:translateY(-6px);
+}
+
+.menu-card h4{
+  margin-bottom:1rem;
+}
+
+/* LOGIN CENTRALIZADO */
+.login-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#ffffff;
+}
+
+.login-box{
+  width:380px;
+  background:#fff;
+  padding:3rem;
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.login-box h2{
+  margin-bottom:2rem;
+  text-align:center;
+}
+
+.login-box input{
+  width:100%;
+  padding:0.9rem;
+  margin-bottom:1rem;
+  border:1px solid #000;
+  border-radius:8px;
+}
+
+/* BOTÃO LOGIN AMARELO */
+.login-box button{
+  width:100%;
+  padding:1rem;
+  background:#ffd700;
+  color:#000;
+  font-weight:900;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  box-shadow:0 0 0 2px #000, 0 8px 18px rgba(0,0,0,0.18);
+  transition:0.3s;
+}
+
+.login-box button:hover{
+  transform:translateY(-2px);
+  background:#ffcc00;
+}
+
+/* BOTÕES GERAIS */
+button{
+  background:#ffd700;
+  color:#000;
+  border:none;
+  padding:0.8rem 1.4rem;
+  font-weight:700;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#ffcc00;
+}
+
+/* FOOTER BARRA PRETA */
+footer{
+  background:#000000;
+  color:#ffffff;
+  padding:3rem 2rem;
+  margin-top:3rem;
+  border-top:2px solid #ffd700;
+}
+
+footer h5{
+  color:#ffffff;
+}
+
+footer p{
+  color:#e0e0e0;
+}
+
+footer input{
+  width:100%;
+  padding:0.7rem;
+  margin-bottom:1rem;
+  border-radius:8px;
+  border:1px solid #fff;
+}
+
+footer button{
+  width:100%;
+}

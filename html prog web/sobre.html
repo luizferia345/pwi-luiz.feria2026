@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head><meta charset="UTF-8"><title>Sobre</title></head>
-<body style="margin:0; font-family:Arial; background:#f2f2f2;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Canolli Vianna</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-<header style="background:#eaeaea; padding:10px; border-bottom:2px solid #ccc;">
-    <img src="imagens/logo.png" width="40">
-    <nav style="float:right;">
-        <a href="index.html">Inicio</a>
-        <a href="sobre.html">Sobre</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="cardapio.html">Cardápio</a> |
-        <a href="trabalhe.html">Trabalhe Conosco</a> |
-        <a href="login.html">Login 🔒</a>
-    </nav>
-</header>
-
-<main style="padding:20px;">
-
-<h2>Sobre</h2>
-
-<section style="display:flex; gap:20px;">
-    <div style="width:50%;">
-        <p style="background:white; padding:15px; border:1px solid #f7baba;">DA ITÁLIA PARA O BRASIL
-Em 1948, desembarcava no Brasil a Imigrante Carmelia Vianna, que viria a criar, alguns anos depois, o Grupo Vianna. Além de sonhos, Carmellia trazia na bagagem toda a tradição da culinária italiana.</p>
-        <p style="background:white; padding:15px; border:1px solid #fcc0c0; margin-top:10px;">Em 1960 com o progresso do centro da cidade de São Paulo, o Carmelia mudou de endereço para a famosa e charmosa av. Vieira de Carvalho.
-
-Em 1978 Carmelia passou a direção do restaurante para seu amigo Antonio Carlos Marino, filho de italiano e amante da cozinha mediterrânea..</p>
+  <header>
+    <div class="container">
+      <h1>Canolli Vianna</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="Cardapio.html">Cardápio</a></li>
+          <li><a href="Trabalhe.html">Trabalhe Conosco</a></li>
+          <li><a href="login.html">Login 🔒</a></li>
+        </ul>
+      </nav>
     </div>
-    <div style="width:50%;">
-        <img src="imagens/restaurante.png" width="100%">
-    </div>
-</section>
+  </header>
 
-<section style="margin-top:30px; display:flex; gap:20px;">
-    <div style="background:rgb(228, 166, 166); padding:20px; width:33%; text-align:center;">
-        <img src="imagens/chef1.jpg" width="80">
-        <p>Chef claudio bizerret</p>
-    </div>
-    <div style="background:rgb(235, 179, 179); padding:20px; width:33%; text-align:center;">
-        <img src="imagens/chef2.jpg" width="80">
-        <p>Chef roman juleticeht</p>
-    </div>
-    <div style="background:rgb(233, 171, 171); padding:20px; width:33%; text-align:center;">
-        <img src="imagens/chef3.jpg" width="80">
-        <p>Chef barichelli oracio</p>
-    </div>
-</section>
+  <section class="hero">
+    <h2>Nossa História</h2>
+    <p>Da Itália para o Brasil, com muito sabor 🇮🇹</p>
+  </section>
 
-</main>
+  <section class="menu">
+    <div class="container">
+      <h3>Quem Somos</h3>
+      <div class="menu-grid">
+        <div class="menu-card" style="text-align: left;">
+          <h4>Da Itália para o Brasil</h4>
+          <p>Em 1948, desembarcava no Brasil a imigrante Carmelia Vianna, que viria a criar, alguns anos depois, o Grupo Vianna. Além de sonhos, Carmelia trazia na bagagem toda a tradição da culinária italiana.</p>
+        </div>
+        <div class="menu-card" style="text-align: left;">
+          <h4>Nossa Trajetória</h4>
+          <p>Em 1960, com o progresso do centro de São Paulo, o restaurante mudou para a famosa Av. Vieira de Carvalho. Em 1978, Carmelia passou a direção para seu amigo Antonio Carlos Marino, filho de italiano e amante da cozinha mediterrânea.</p>
+        </div>
+        <div class="menu-card">
+          <img src="imagens/restaurante.png" alt="Restaurante Canolli Vianna" style="border-radius: 8px;">
+        </div>
+      </div>
 
-<footer style="background:#1f2d3d; color:white; text-align:center; padding:20px;">
-    tiktok | face | insta | in | whats
-</footer>
+      <h3 style="margin-top: 3rem;">Nossa Equipe</h3>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="imagens/chef1.jpg" alt="Chef Claudio" width="80" style="border-radius: 50%; margin-bottom: 1rem;">
+          <h4>Chef Claudio Bizerret</h4>
+          <p>Especialista em massas frescas e molhos clássicos italianos.</p>
+        </div>
+        <div class="menu-card">
+          <img src="imagens/chef2.jpg" alt="Chef Roman" width="80" style="border-radius: 50%; margin-bottom: 1rem;">
+          <h4>Chef Roman Juleticeht</h4>
+          <p>Mestre em risotos e pratos da culinária do norte da Itália.</p>
+        </div>
+        <div class="menu-card">
+          <img src="imagens/chef3.jpg" alt="Chef Barichelli" width="80" style="border-radius: 50%; margin-bottom: 1rem;">
+          <h4>Chef Barichelli Oracio</h4>
+          <p>Responsável pelas sobremesas e doces tradicionais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h5>Canolli Vianna</h5>
+        <p>A melhor experiência italiana da cidade.</p>
+      </div>
+      <div>
+        <h5>Links</h5>
+        <p><a href="sobre.html">Sobre nós</a></p>
+        <p><a href="Cardapio.html">Cardápio</a></p>
+        <p><a href="contato.html">Contato</a></p>
+      </div>
+      <div>
+        <h5>Redes Sociais</h5>
+        <div class="socials">
+          <a href="#">TK</a>
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">IN</a>
+          <a href="#">WA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
