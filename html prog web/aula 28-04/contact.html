@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configuração de caracteres e viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link para arquivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Título que aparece na aba do navegador -->
     <title>Contato - Beritos Bistrô</title>
 </head>
 <body>
+    <!-- ========== HEADER ========== -->
+    <!-- Cabeçalho com navegação e banner da página de contato -->
     <header>
         <nav>
-            <h1 class="logo">🍷 Beritos Bistrô</h1>
+            <!-- Logo do restaurante -->
+            <h1 class="logo">Beritos Bistrô</h1>
+            
+            <!-- Links de navegação para outras páginas (corrigido em <li>) -->
             <ul class="nav-links">
-                <a href="index.html">Início</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">Sobre Nós</a>
-                <a href="contact.html">Contato</a>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
+        
+        <!-- Banner com título e descrição da página de contato -->
         <div class="header-content">
             <h2>Entre em Contato Conosco</h2>
             <p>Estamos à sua disposição para tirar dúvidas e fazer reservas</p>
         </div>
     </header>
 
+    <!-- ========== CONTEÚDO PRINCIPAL ========== -->
+    <!-- Formulário de contato e informações do restaurante -->
     <main>
-        <section>
+        <!-- Seção: Informações de contato -->
+        <section class="content-section">
             <h2>Como nos encontrar</h2>
             <ul>
                 <li>Telefone: (11) 1234-5678</li>
@@ -32,40 +47,64 @@
                 <li>Endereço: Rua da Gastronomia, 123, São Paulo</li>
             </ul>
         </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6503989852745!2d-47.15763702385574!3d-21.08662087536746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7732fb06ff583%3A0x18b108adbf10154b!2sRua%20da%20Gastronomia!5e0!3m2!1spt-BR!2sbr!4v1778027783707!5m2!1spt-BR!2sbr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <!-- Mapa interativo da localização -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6503989852745!2d-47.15763702385574!3d-21.08662087536746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7732fb06ff583%3A0x18b108adbf10154b!2sRua%20da%20Gastronomia!5e0!3m2!1spt-BR!2sbr!4v1778027783707!5m2!1spt-BR!2sbr" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-        <section>
-            <h2>Mensagem</h2>
-            <form>
+        <!-- Seção: Formulário de mensagem -->
+        <section class="content-section">
+            <h2>Envie uma Mensagem</h2>
+            <form class="contact-form">
+                <!-- Campo de nome -->
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" required>
                 </div>
+                
+                <!-- Campo de email -->
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
+                
+                <!-- Campo de mensagem -->
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem"></textarea>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                
+                <!-- Botão de envio -->
+                <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
 
+    <!-- ========== RODAPÉ ========== -->
+    <!-- Rodapé com aviso de consumo responsável e redes sociais -->
     <footer>
-        <div class="barra-alerta">
+        <!-- Aviso de consumo responsável de bebidas alcoólicas -->
+        <div class="alert-bar">
             <p>⚠️ Se beber, não dirija! Consumir com moderação.</p>
         </div>
+        
+        <!-- Informações finais do rodapé -->
         <div class="footer-container">
-            <div class="footer-logo">🍷 Beritos Bistrô</div>
+            <!-- Nome do estabelecimento -->
+            <div class="footer-logo">Beritos Bistrô</div>
+            
+            <!-- Links para redes sociais -->
             <div class="footer-links">
                 <a href="https://www.facebook.com/beritosbistro" target="_blank">Facebook</a> |
                 <a href="https://www.instagram.com/beritosbistro" target="_blank">Instagram</a> |
                 <a href="https://www.whatsapp.com/beritosbistro" target="_blank">WhatsApp</a>
             </div>
+            
+            <!-- Direitos autorais -->
             <p>&copy; 2024 Beritos Bistrô. Todos os direitos reservados.</p>
+            
+            <!-- Dados de contato -->
             <p>Telefone: (11) 1234-5678 | Email: contato@beritosbistro.com.br</p>
         </div>
     </footer>

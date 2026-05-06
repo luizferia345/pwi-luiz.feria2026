@@ -1,4 +1,5 @@
-/* ===== RESET GLOBAL ===== */
+/* BERITOS BISTRÔ - ESTILOS MINIMALISTAS */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,46 +10,40 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ===== VARIÁVEIS DE CORES ===== */
 :root {
-    --cor-primaria: #222222;
-    --cor-secundaria: #c9a961;
-    --cor-destaque: #d4a574;
-    --cor-fundo: #f3f3f3;
-    --cor-fundo-gradiente-1: #ffffff;
-    --cor-fundo-gradiente-2: #f2f2f2;
-    --cor-texto: #2f3a44;
-    --cor-texto-claro: #6b7280;
-    --cor-borda: #dde2e7;
-    --cor-hover: #f6e7c4;
-    --cor-alerta: #e74c3c;
-    --sombra-leve: 0 2px 6px rgba(0, 0, 0, 0.08);
-    --sombra-media: 0 4px 12px rgba(0, 0, 0, 0.1);
-    --sombra-forte: 0 8px 20px rgba(0, 0, 0, 0.14);
+    --primaria: #222222;
+    --destaque: #d4a574;
+    --texto: #2f3a44;
+    --texto-claro: #6b7280;
+    --borda: #dde2e7;
+    --alerta: #e74c3c;
 }
 
-/* ===== BODY ===== */
 body {
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-    color: var(--cor-texto);
-    background: linear-gradient(180deg, var(--cor-fundo-gradiente-1), var(--cor-fundo-gradiente-2));
+    color: var(--texto);
     line-height: 1.6;
+    background: linear-gradient(180deg, #ffffff, #f2f2f2);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* ===== HEADER E NAVEGAÇÃO ===== */
+/* ===== 4. CABEÇALHO E NAVEGAÇÃO ===== */
+/* Barra superior com navegação - sticky para acompanhar scroll */
 header {
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.95);  /* Branco semi-transparente */
     color: var(--cor-texto);
     padding: 0;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+   HEADER */
+header {
+    background: rgba(255, 255, 255, 0.95);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid var(--cor-borda);
+    border-bottom: 1px solid var(--borda);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
 }
 
 nav {
@@ -58,12 +53,13 @@ nav {
     padding: 16px 32px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .logo {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--cor-primaria);
+    color: var(--primaria);
     letter-spacing: 1px;
 }
 
@@ -75,21 +71,21 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--cor-texto);
+    color: var(--texto);
     font-weight: 500;
-    transition: color 0.2s ease;
+    transition: color 0.2s;
     font-size: 0.95rem;
 }
 
 .nav-links a:hover {
-    color: var(--cor-primaria);
+    color: var(--primaria);
 }
 
 .header-content {
-    background: linear-gradient(135deg, rgba(201, 169, 97, 0.12), rgba(243, 243, 243, 0.9));
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.12), rgba(243, 243, 243, 0.9));
     padding: 72px 32px;
     text-align: center;
-    color: var(--cor-primaria);
+    color: var(--primaria);
 }
 
 .header-content h2 {
@@ -99,13 +95,7 @@ nav {
 
 .header-content p {
     font-size: 1rem;
-    color: var(--cor-texto-claro);
-}
-
-/* ===== MAIN CONTENT ===== */
-main {
-    flex: 1;
-    max-width: 1100px;
+    color: var(-x;
     width: 92%;
     margin: 44px auto;
     background: white;
@@ -114,67 +104,72 @@ main {
     box-shadow: var(--sombra-media);
 }
 
-/* ===== SEÇÕES ===== */
+/* ===== 6. SEÇÕES DE CONTEÚDO ===== */
+/* CONTEÚDO PRINCIPAL */
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 92%;
+    margin: 44px auto;
+    background: white;
+    padding: 34px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 section {
     margin-bottom: 38px;
 }
 
 section h2 {
-    color: var(--cor-primaria);
+    color: var(--primaria);
     font-size: 1.8rem;
     margin-bottom: 16px;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--cor-destaque);
+    border-bottom: 2px solid var(--destaque);
 }
 
 section p {
-    color: var(--cor-texto-claro);
+    color: var(--texto-claro);
     font-size: 1rem;
-    line-height: 1.75;
-    margin-bottom: 14px;
-}
-
+   GRID PÁGINA SOBRE */
 .about-grid {
     display: grid;
-    grid-template-columns: minmax(280px, 1.3fr) minmax(200px, 1fr);
+    grid-template-columns: 1.3fr 1fr;
     gap: 28px;
     align-items: center;
 }
 
 .about-image {
-    border-radius: 18px;
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: var(--sombra-media);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-image img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    min-height: 280px;
-    aspect-ratio: 4 / 3;
-}
-
-/* ===== LISTAS ===== */
+   LISTAS */
 ul, ol {
     margin-left: 24px;
-    color: var(--cor-texto-claro);
+    color: var(--texto-claro);
 }
 
 li {
     margin-bottom: 14px;
     line-height: 1.8;
-    font-size: 0.95rem;
-}
-
-strong {
-    color: var(--cor-primaria);
-    font-weight: 600;
-}
-
-/* ===== BOTÕES ===== */
+    font-size: 0.95rem==== */
+/* Estilo padrão para botões */
 button, .btn {
     background: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;  /* Muda cursor para indicar clicabilidade */
+    font-size: 0.95rem;
+    font-weight: 600;
+   BOTÕES */
+button, .btn {
+    background: var(--primaria);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -182,17 +177,17 @@ button, .btn {
     cursor: pointer;
     font-size: 0.95rem;
     font-weight: 600;
-    transition: background 0.2s ease, transform 0.2s ease;
-    box-shadow: var(--sombra-leve);
+    transition: all 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 button:hover, .btn:hover {
-    background: var(--cor-destaque);
+    background: var(--destaque);
     transform: translateY(-2px);
-    box-shadow: var(--sombra-media);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Usa estilo padrão de form */
 }
-
-/* ===== FORMULÁRIOS ===== */
+FORMULÁRIOS */
 form {
     max-width: 600px;
     margin: 20px 0;
@@ -206,51 +201,51 @@ form {
 
 label {
     font-weight: 600;
-    color: var(--cor-primaria);
+    color: var(--primaria);
     margin-bottom: 8px;
     font-size: 0.95rem;
 }
 
 input, textarea, select {
     padding: 12px;
-    border: 1px solid var(--cor-borda);
+    border: 1px solid var(--borda);
     border-radius: 4px;
     font-family: 'Segoe UI', 'Roboto', sans-serif;
     font-size: 0.95rem;
-    color: var(--cor-texto);
-    transition: all 0.3s ease;
+    color: var(--texto);
+    transition: all 0.3s;
     background: white;
 }
 
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: var(--cor-destaque);
-    box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.1);
+    border-color: var(--destaque);
+    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
 }
 
 textarea {
     resize: vertical;
-    min-height: 120px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    width: 100%;
-    background: white;
-    color: var(--cor-texto);
-    padding: 40px 20px;
-    margin-top: auto;
-    box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.08);
+    min-height: 120px;08);  /* Sombra no topo */
     border-top: 1px solid var(--cor-borda);
 }
 
-.barra-alerta {
-    background-color: var(--cor-alerta);
+/* Barra de alerta - para avisos legais */
+.alert-bar {
+   RODAPÉ */
+footer {
+    background: white;
+    padding: 40px 20px;
+    margin-top: auto;
+    border-top: 1px solid var(--borda);
+    box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.08);
+}
+
+.alert-bar {
+    background-color: var(--alerta);
     color: white;
     padding: 14px;
     text-align: center;
     font-weight: 500;
-    font-size: 1rem;
     margin-bottom: 20px;
     border-radius: 4px;
     max-width: 1200px;
@@ -262,12 +257,13 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    color: var(--texto-claro);
 }
 
 .footer-logo {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--cor-primaria);
+    color: var(--primaria);
     margin-bottom: 16px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -278,26 +274,49 @@ footer {
 }
 
 .footer-links a {
-    color: var(--cor-destaque);
+    color: var(--destaque);
     text-decoration: none;
     margin: 0 10px;
-    transition: all 0.3s ease;
     font-weight: 500;
     font-size: 0.95rem;
+    transition: all 0.2s;
 }
 
 .footer-links a:hover {
-    color: var(--cor-primaria);
+    color: var(--primaria);
     text-decoration: underline;
 }
 
 footer p {
     margin: 10px 0;
-    font-size: 0.9rem;
-    color: var(--cor-texto-claro);
+    font-size: 0.9rem
+    height: 450px;
+    border: none;
 }
 
-/* ===== RESPONSIVIDADE ===== */
+/* ===== 13. RESPONSIVIDADE - Telas Médias (tablets) ===== */
+/* Para telas com até 768px de largura */
+@media (max-width: 768px) {
+    /* Navegação muda para coluna em telas pequenas */
+    nav {
+        flex-direction: column;  /* Logo acima, menu abaixo */
+   MAPA */
+.map-container {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+    /* Links ocupam linha inteira */
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Banner com menos espaçamento em mobile */
+   RESPONSIVIDADE */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -312,7 +331,6 @@ footer p {
     }
 
     .nav-links a {
-        width: 100%;
         text-align: center;
     }
 
@@ -334,15 +352,41 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .about-image img {
-        min-height: auto;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
-    }
-
-    .mapa iframe {
+    .map-container iframe {
         height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 6px;
+    }
+
+    .header-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    button, .btn {
+        width: 100%;
     }
 }
