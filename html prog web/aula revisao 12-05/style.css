@@ -5,17 +5,28 @@
     box-sizing: border-box;
 }
 @media (max-width: 600px) {
-    .cardapio {
-        padding: 2px 10px;
-        .cardapio h2{
-            font-size: 16px;
-        }
-        .cardapio p{
-            font-size: 12px;
-        }
-
+    .cardapio { /* layout responsivo do cardápio em telas pequenas */
+        padding: 10px 16px;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 24px;
+    }
+
+    .cardapio h3 { /* títulos menores em telas pequenas */
+        font-size: 18px;
+    }
+
+    .cardapio p { /* parágrafos menores em telas pequenas */
+        font-size: 14px;
+    }
+
+    .bloco { /* empilha blocos em vez de manter lado a lado */
+        flex-direction: column;
+    }
+
+    .imagem img { /* imagens responsivas */
+        width: 100%;
+        height: auto;
     }
 }
 /*menu de navegação*/
@@ -47,6 +58,70 @@
 }
 .menu-links a:hover {
     color: #ffcc00;
+}
+/*contato*/
+.formulario {
+max-width: 600px;
+margin: 40px auto;
+padding: 20px;
+background-color: #054785;
+border-radius: 10px;
+color: #ffffff;
+font:-family: Arial, sans-serif;
+font-weight: bold;
+}
+.formulario h1 {
+font-size: 28px;
+margin-bottom: 20px;
+color: #ffffff;
+}
+.formulario input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+}
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+
+}
+.formulario button {
+    padding: 10px 20px;
+    background-color: #0562ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s; 
+}
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.formulario button:hover {
+    background-color: #ffcc00;
+    color: #1d1d1d;
+}
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #fdfdfd;
+    font-weight: bold;
 }
 /*estilos para o rodapé*/
 .barra-alerta {
@@ -101,16 +176,21 @@
 }
 .cardapio {
     padding: 20px 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .bloco {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 8px;
+}
+.bloco.reverse { /* inverte o lado da imagem e do texto para alternar itens */
+    flex-direction: row-reverse;
 }
 .vermelho {
     background-color: #2b7ce7;
@@ -131,7 +211,8 @@
     border-radius: 8px;
 }
 .imagem img {
-    width: 300px;
+    width: 100%;
+    max-width: 360px;
     height: 300px;
     border-radius: 8px;
     object-fit: cover;
@@ -139,7 +220,6 @@
 .texto h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    gap: 30px;
 }
 .texto p {
     font-size: 16px;
@@ -150,5 +230,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px;
+    flex: 1 1 320px;
+}
+.imagem {
+    flex: 1 1 320px;
 }

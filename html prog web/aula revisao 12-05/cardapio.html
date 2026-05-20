@@ -18,39 +18,61 @@
             </ul> <!-- fim da lista de links -->
         </nav>    <!-- fim da barra de navegação -->
     </header><!-- fim do cabeçalho -->
-        <section class="cardapio"> <!-- seção dedicada ao cardápio --> 
-                <div class="bloco vermelho">
-                    <div class="texto">
-                        <h3>Hambúrguer Clássico</h3> <!-- nome do prato -->
-                <p>Delicioso hambúrguer com carne suculenta, queijo, alface, tomate e molho especial.</p> <!-- descrição do prato -->
-                <p>R$ 34,90</p>
-                    </div>
-                    <div class="imagem">
-                        <img src="imagens revisao/hamburguer.jpg" alt="Hambúrguer Clássico"> <!-- imagem do prato com texto alternativo -->
-                    </div>
-            </div>
-<div class="cardapio-item">
-                <div class="bloco beje">
-                      <div class="imagem">
-                        <img src="imagens revisao/pizza.jpg" alt="Pizza Margherita">
-                        </div> <!-- imagem do prato com texto alternativo -->
-                    <div class="texto">
-                        <h3>Pizza Margherita</h3> <!-- nome do prato -->
-                <p>Pizza tradicional com molho de tomate, mussarela, manjericão e azeite de oliva.</p> <!-- descrição do prato -->
-                <p>R$ 65,50</p>
-                </div>
-            </div>
-             <div class="bloco verde">
-                    <div class="texto">
-                        <h3>Nhoque</h3> <!-- nome do prato -->
-                <p>Delicioso nhoque com carne suculenta, queijo, alface, tomate e molho especial.</p> <!-- descrição do prato -->
-                <p>R$ 54,80</p>
-                    </div>
-                    <div class="imagem">
-                        <img src="imagens revisao/nhoque.jpg" alt="Nhoque"> <!-- imagem do prato com texto alternativo -->
-                    </div>
+        <section class="cardapio"> <!-- seção dedicada ao cardápio -->
+            <div class="bloco vermelho"> <!-- primeiro item do cardápio -->
+                <div class="texto"> <!-- coluna de texto do item -->
+                    <h3>Hambúrguer Clássico</h3> <!-- nome do prato -->
+                    <p>Delicioso hambúrguer com carne suculenta, queijo, alface, tomate e molho especial.</p> <!-- descrição do prato -->
+                    <p>R$ 34,90</p> <!-- preço do prato -->
+                </div> <!-- fim da coluna de texto -->
+                <div class="imagem"> <!-- coluna de imagem do item -->
+                    <img src="imagens revisao/hamburguer.jpg" alt="Hambúrguer Clássico"> <!-- imagem do prato com texto alternativo -->
+                </div> <!-- fim da coluna de imagem -->
+            </div> <!-- fim do primeiro item -->
 
+            <div class="bloco beje reverse"> <!-- segundo item com layout reverso -->
+                <div class="texto"> <!-- coluna de texto do item -->
+                    <h3>Pizza Margherita</h3> <!-- nome do prato -->
+                    <p>Pizza tradicional com molho de tomate, mussarela, manjericão e azeite de oliva.</p> <!-- descrição do prato -->
+                    <p>R$ 65,50</p> <!-- preço do prato -->
+                </div> <!-- fim da coluna de texto -->
+                <div class="imagem"> <!-- coluna de imagem do item -->
+                    <img src="imagens revisao/pizza.jpg" alt="Pizza Margherita"> <!-- imagem do prato com texto alternativo -->
+                </div> <!-- fim da coluna de imagem -->
+            </div> <!-- fim do segundo item -->
+
+            <div class="bloco verde"> <!-- terceiro item do cardápio -->
+                <div class="texto"> <!-- coluna de texto do item -->
+                    <h3>Nhoque</h3> <!-- nome do prato -->
+                    <p>Delicioso nhoque com molho de tomate, queijo gratinado e ervas finas.</p> <!-- descrição do prato -->
+                    <p>R$ 54,80</p> <!-- preço do prato -->
+                </div> <!-- fim da coluna de texto -->
+                <div class="imagem"> <!-- coluna de imagem do item -->
+                    <img src="imagens revisao/nhoque.jpg" alt="Nhoque"> <!-- imagem do prato com texto alternativo -->
+                </div> <!-- fim da coluna de imagem -->
+            </div> <!-- fim do terceiro item -->
         </section> <!-- fim da seção do cardápio -->
+
+        <section class="formulario"> <!-- formulário de reserva -->
+            <h1>Agende sua Reserva</h1> <!-- título do formulário -->
+            <form id="formReserva"> <!-- início do formulário de reserva -->
+                <label>Nome</label> <!-- rótulo para o nome -->
+                <input type="text" name="nome" required placeholder="digite seu nome"> <!-- campo de entrada para o nome do cliente -->
+                <label>Whatsapp</label> <!-- rótulo para o telefone -->
+                <input type="tel" name="whatsapp" required placeholder="digite seu whatsapp"> <!-- campo de entrada para o telefone do cliente -->
+                <label>Email</label> <!-- rótulo para o email -->
+                <input type="email" name="email" required placeholder="digite seu email"> <!-- campo de entrada para o email do cliente -->
+                <label>Data</label> <!-- rótulo para a data -->
+                <input type="date" name="data" required placeholder="digite a data"> <!-- campo de entrada para a data da reserva -->
+                <label>Hora</label> <!-- rótulo para a hora -->
+                <input type="time" name="hora" required placeholder="digite a hora">
+                <label>Observações</label> <!-- rótulo para observações -->
+                <textarea id="mensagem" placeholder="Exemplo:nome João, qtde de pessoas 4 mesa: proxima a janela."></textarea> <!-- campo de entrada para observações -->
+                <button type="submit">Enviar</button> <!-- botão para enviar o formulário de reserva -->
+            </form> <!-- fim do formulário -->
+            <p id="resultado"></p> <!-- parágrafo para exibir o resultado da submissão do formulário -->
+        </section> <!-- fim da seção do formulário -->
+        <script src="script.js"></script> <!-- inclui o arquivo JavaScript externo para funcionalidades -->
     <footer> <!-- área de rodapé da página -->
         <div class="barra-alerta">
             <p>SE BEBER NAO DIRIJA!</p> <!-- sem conteúdo no rodapé por enquanto -->
