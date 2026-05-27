@@ -4,64 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Canolli Vianna</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ===== CABEÇALHO ===== -->
   <header>
-    <div class="container">
+    <div class="cabecalho-interno">
       <h1>Canolli Vianna</h1>
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="Cardapio.html">Cardápio</a></li>
-          <li><a href="Trabalhe.html">Trabalhe Conosco</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
           <li><a href="login.html">Login 🔒</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="menu page-center">
-    <div class="container form-container">
-      <div class="menu-card card-small">
-        <h4 class="card-title">🔒 Login</h4>
-        <form class="form-stack">
-          <input type="text" placeholder="Usuário">
-          <input type="password" placeholder="Senha">
-          <button type="button" class="btn btn-dark">Entrar</button>
-          <button type="button" class="btn btn-primary">Registrar</button>
-        </form>
+  <!-- ===== FORMULÁRIO DE LOGIN CENTRALIZADO ===== -->
+  <!-- pagina-login centraliza o card no meio da tela -->
+  <section class="pagina-login">
+    <div class="card card-login">
+
+      <h4>🔒 Login</h4>
+
+      <div class="formulario">
+        <input type="text" placeholder="Usuário">
+        <input type="password" placeholder="Senha">
+        <button type="button" class="botao botao-escuro" onclick="login()">Entrar</button>
+        <button type="button" class="botao botao-amarelo">Registrar</button>
       </div>
+
     </div>
   </section>
 
+  <!-- ===== RODAPÉ ===== -->
   <footer>
     <div class="container">
+
       <div>
         <h5>Canolli Vianna</h5>
         <p>A melhor experiência italiana da cidade.</p>
       </div>
+
       <div>
         <h5>Links</h5>
         <p><a href="sobre.html">Sobre nós</a></p>
-        <p><a href="Cardapio.html">Cardápio</a></p>
+        <p><a href="cardapio.html">Cardápio</a></p>
         <p><a href="contato.html">Contato</a></p>
       </div>
+
       <div>
         <h5>Redes Sociais</h5>
-        <div class="socials">
+        <div class="redes-sociais">
           <a href="#">TK</a>
           <a href="#">FB</a>
           <a href="#">IG</a>
-          <a href="#">IN</a>
           <a href="#">WA</a>
         </div>
       </div>
+
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

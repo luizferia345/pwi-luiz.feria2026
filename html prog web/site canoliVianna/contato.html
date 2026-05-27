@@ -4,87 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Canolli Vianna</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ===== CABEÇALHO ===== -->
   <header>
-    <div class="container">
+    <div class="cabecalho-interno">
       <h1>Canolli Vianna</h1>
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="Cardapio.html">Cardápio</a></li>
-          <li><a href="Trabalhe.html">Trabalhe Conosco</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
           <li><a href="login.html">Login 🔒</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- ===== HERO ===== -->
   <section class="hero">
     <h2>Fale Conosco</h2>
     <p>Estamos prontos para te atender 📞</p>
   </section>
 
-  <section class="menu">
+  <!-- ===== INFORMAÇÕES DE CONTATO ===== -->
+  <section class="secao-conteudo">
     <div class="container">
-      <div class="menu-grid">
+      <div class="grade-cards">
 
-        <div class="menu-card text-left">
+        <!-- Endereço e telefone -->
+        <div class="card card-texto">
           <h4>📍 Endereço</h4>
           <p>Rua Hipódromo, nº 65</p>
           <p>Bairro: Centro — São Paulo, SP</p>
+
           <br>
+
           <h4>📱 Redes Sociais</h4>
           <p>@CanolliVianna</p>
+
           <br>
+
           <h4>📞 Telefone</h4>
           <p>(11) 94765-4863</p>
         </div>
-        <div class="menu-card map-card">
-          <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29259.141545411167!2d-46.58236772432862!3d-23.554335836523403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1778087221652!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Mapa do Google -->
+        <div class="card card-mapa">
+          <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29259.141545411167!2d-46.58236772432862!3d-23.554335836523403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1778087221652!5m2!1spt-BR!2sbr"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
 
-        <div class="menu-card text-left">
+        <!-- Formulário de mensagem -->
+        <div class="card card-texto">
           <h4>Envie uma Mensagem</h4>
-          <form class="form-stack mt-1">
+          <div class="formulario">
             <input type="text" placeholder="Nome">
             <input type="email" placeholder="Email">
             <input type="text" placeholder="Telefone">
             <textarea placeholder="Mensagem" rows="4"></textarea>
-            <button type="button" class="btn btn-primary">Enviar</button>
-          </form>
+            <button type="button" class="botao botao-amarelo">Enviar</button>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- ===== RODAPÉ ===== -->
   <footer>
     <div class="container">
+
       <div>
         <h5>Canolli Vianna</h5>
         <p>A melhor experiência italiana da cidade.</p>
       </div>
+
       <div>
         <h5>Links</h5>
         <p><a href="sobre.html">Sobre nós</a></p>
-        <p><a href="Cardapio.html">Cardápio</a></p>
+        <p><a href="cardapio.html">Cardápio</a></p>
         <p><a href="contato.html">Contato</a></p>
       </div>
+
       <div>
         <h5>Redes Sociais</h5>
-        <div class="socials">
+        <div class="redes-sociais">
           <a href="#">TK</a>
           <a href="#">FB</a>
           <a href="#">IG</a>
-          <a href="#">IN</a>
           <a href="#">WA</a>
         </div>
       </div>
+
     </div>
   </footer>
 

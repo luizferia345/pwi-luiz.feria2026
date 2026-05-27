@@ -1,0 +1,306 @@
+/* ============================================================
+   RESET — apaga os estilos padrão do navegador
+   ============================================================ */
+* {
+  margin: 0;           /* remove espaço externo padrão */
+  padding: 0;          /* remove espaço interno padrão */
+  box-sizing: border-box; /* faz o padding não aumentar o tamanho do elemento */
+}
+
+/* ============================================================
+   BASE — estilos gerais aplicados em toda a página
+   ============================================================ */
+body {
+  font-family: Arial, sans-serif; /* fonte padrão do site */
+  font-size: 16px;                /* tamanho base do texto */
+  line-height: 1.6;               /* espaço entre as linhas do texto */
+  color: #111;                    /* cor principal do texto */
+  background: #f8e5e5;            /* cor de fundo da página */
+}
+
+a {
+  text-decoration: none; /* remove o sublinhado dos links */
+  color: inherit;        /* link usa a mesma cor do texto ao redor */
+}
+
+img {
+  max-width: 100%; /* imagem nunca ultrapassa o tamanho do pai */
+  height: auto;    /* altura proporcional à largura */
+}
+
+/* ============================================================
+   CABEÇALHO — barra preta fixa no topo
+   ============================================================ */
+header {
+  background: #000;               /* fundo preto */
+  padding: 1rem 2rem;             /* espaço interno: cima/baixo e lados */
+  border-bottom: 2px solid #ffd700; /* linha dourada na parte de baixo */
+}
+
+/* Logo e menu ficam lado a lado com espaço entre eles */
+header .cabecalho-interno {
+  display: flex;
+  justify-content: space-between; /* logo à esquerda, menu à direita */
+  align-items: center;            /* alinha no centro vertical */
+}
+
+/* Nome do restaurante no canto esquerdo */
+header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Lista de links da navegação em linha */
+nav ul {
+  display: flex;
+  list-style: none; /* remove os pontinhos da lista */
+  gap: 2rem;        /* espaço entre cada link */
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s; /* animação suave na troca de cor */
+}
+
+nav a:hover {
+  color: #ffd700; /* link fica dourado ao passar o mouse */
+}
+
+/* ============================================================
+   HERO — bloco de destaque com imagem de fundo
+   ============================================================ */
+.hero {
+  /* Camada branca translúcida sobre a foto para clarear */
+  background:
+    linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+    url('https://images.unsplash.com/photo-1629803868284-1d6362e4e7aa')
+    no-repeat center center / cover;
+
+  padding: 7rem 2rem;           /* espaço generoso dentro do bloco */
+  text-align: center;           /* texto centralizado */
+  border-bottom: 2px solid #000;
+}
+
+.hero h2 {
+  font-size: 3rem; /* título grande no hero */
+}
+
+/* ============================================================
+   TÍTULOS — estilo compartilhado por h2, h3, h4, h5
+   ============================================================ */
+h2, h3, h4, h5 {
+  color: #000;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ============================================================
+   CONTAINER — caixa centralizada que limita a largura do conteúdo
+   ============================================================ */
+.container {
+  max-width: 1100px;  /* largura máxima do conteúdo */
+  margin: 0 auto;     /* centraliza horizontalmente na tela */
+  padding: 0 1rem;    /* espaço nas laterais em telas menores */
+}
+
+/* ============================================================
+   SEÇÃO — espaçamento padrão entre blocos de conteúdo
+   ============================================================ */
+section {
+  padding: 4rem 2rem;
+}
+
+.secao-conteudo {
+  background: #fae7e7; /* fundo rosado para seções de conteúdo */
+}
+
+/* ============================================================
+   GRID DE CARDS — layout responsivo em colunas
+   ============================================================ */
+.grade-cards {
+  display: grid;
+  /* colunas se ajustam automaticamente: mínimo 260px, máximo igual */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem; /* espaço entre os cards */
+}
+
+/* ============================================================
+   CARD — caixa de conteúdo individual
+   ============================================================ */
+.card {
+  background: #f5e7e7;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s; /* animação suave ao passar o mouse */
+}
+
+.card:hover {
+  transform: translateY(-6px); /* card sobe um pouco ao passar o mouse */
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+}
+
+/* Card com texto alinhado à esquerda (usado em contato, vagas) */
+.card-texto {
+  text-align: left;
+}
+
+/* Card do mapa do Google — sem padding para o mapa preencher tudo */
+.card-mapa {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ============================================================
+   IMAGENS DENTRO DOS CARDS
+   ============================================================ */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;   /* corta a imagem mantendo proporção */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.img-arredondada {
+  border-radius: 8px;
+}
+
+.img-avatar {
+  width: 80px;
+  border-radius: 50%;  /* imagem em círculo */
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   MAPA — iframe do Google Maps
+   ============================================================ */
+.mapa {
+  width: 100%;
+  min-height: 360px;
+  border: 0;
+  display: block;
+}
+
+/* ============================================================
+   FORMULÁRIO — campos e botões de entrada de dados
+   ============================================================ */
+.formulario {
+  display: flex;
+  flex-direction: column; /* campos empilhados verticalmente */
+  gap: 1rem;              /* espaço entre cada campo */
+  margin-top: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* ============================================================
+   BOTÕES
+   ============================================================ */
+.botao {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;      /* mão ao passar o mouse */
+  transition: background 0.3s;
+}
+
+.botao-amarelo {
+  background: #ffd700; /* dourado */
+  color: #1d1d1d;
+}
+
+.botao-escuro {
+  background: #1d1d1d;
+  color: #fff;
+}
+
+.botao:hover {
+  opacity: 0.85; /* escurece levemente ao passar o mouse */
+}
+
+/* ============================================================
+   PÁGINA DE LOGIN — centraliza o card na tela
+   ============================================================ */
+.pagina-login {
+  min-height: 70vh;       /* ocupa pelo menos 70% da altura da janela */
+  display: flex;
+  align-items: center;    /* centraliza verticalmente */
+  justify-content: center;
+}
+
+.card-login {
+  max-width: 380px;
+  width: 100%;
+}
+
+.card-login h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ============================================================
+   RODAPÉ — barra preta no final da página
+   ============================================================ */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  border-top: 2px solid #ffd700; /* linha dourada no topo do rodapé */
+}
+
+/* O conteúdo do rodapé também usa grade para 3 colunas */
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  border: none; /* rodapé não precisa de borda extra */
+}
+
+footer h5 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+footer p,
+footer a {
+  color: #e0e0e0; /* texto mais claro no rodapé */
+}
+
+/* Links das redes sociais lado a lado */
+.redes-sociais {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.redes-sociais a {
+  color: #ffd700; /* ícones dourados */
+  font-weight: 700;
+}
+
+/* Título de seção com espaço acima (usado no cardápio) */
+.titulo-secao {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
