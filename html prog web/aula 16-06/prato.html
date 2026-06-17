@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio do Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cardápio do Restaurante</h1>
+    <div class="cardapio">
+        <div class="button-row">
+            <button onclick="mostrarPratos()">Mostra os Pratos</button>
+            <button onclick="mostrarBebidas()">Mostra as Bebidas</button>
+        </div>
+        <div class="position-row">
+            <label for="posicaoPrato">Escolha seu prato pelo número</label>
+            <input id="posicaoPrato" type="number" min="1" max="10" value="1">
+            <button onclick="mostrarPratoPosicao()">Mostrar Prato</button>
+        </div>
+        <div class="position-row">
+            <label for="posicaoBebida">Escolha sua bebida pelo número</label>
+            <input id="posicaoBebida" type="number" min="1" max="10" value="1"> 
+            <button onclick="mostrarBebidasPosicao()">Mostrar Bebida</button>
+        </div>
+    <div class="button-row">
+    <button onclick="mostrarPratoAleatorio()">Prato Aleatório</button>
+    <button onclick="mostrarBebidaAleatoria()">Bebida Aleatória</button>
+ </div>
+        <div id="resultado"></div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
