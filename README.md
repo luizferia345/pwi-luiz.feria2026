@@ -1,7 +1,7 @@
 # pwi-luiz.feria2026
 Estudante de Desenvolvimento de Sistemas  
  Focado em programação e Arduino, programacao em WEB,
- atualmente no 1° Semestre de ADS pela ETEC.
+ atualmente no 2° Semestre de ADS pela ETEC.
  Em busca de estágio em tecnologia  
 
 ## Projetos e materiais de Estudos
