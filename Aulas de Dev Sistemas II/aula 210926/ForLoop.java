@@ -1,12 +1,11 @@
-public class estrutura_while {
+public class ForLoop {
     public static void main(String[] args) {
         int cont = 1, r = 0, num = 5;
         System.out.println("Digite um número: ");
 
-        while (cont <= 10) {
+        for (cont = 1; cont <= 10; cont++) {
             r = num * cont;
             System.out.println(num + " x " + cont + " = " + r);
-            cont = cont + 1;
         }
 
         System.exit(0);
