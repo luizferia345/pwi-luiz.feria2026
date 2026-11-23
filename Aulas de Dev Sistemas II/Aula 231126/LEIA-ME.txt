@@ -1,0 +1,17 @@
+PROJETOS APACHE NETBEANS (Maven) - Estacionamento
+
+Requisitos: Apache NetBeans (qualquer versao recente), JDK 8+, XAMPP com MySQL ligado
+e o banco criado (banco/estacionamento.sql no phpMyAdmin). As dependencias (driver
+MySQL e MariaDB) sao baixadas pelo Maven na primeira vez - precisa de internet.
+
+1) EstacionamentoDesktop  (Partes I e II)
+   File > Open Project > escolha a pasta EstacionamentoDesktop > botao Run (F6):
+   abre a janela Swing (psv.Main).
+   Parte I (console): clique direito em Teste.java > Run File (Shift+F6).
+
+2) EstacionamentoWeb  (roda no Apache Tomcat)
+   a) Services > Servers > botao direito > Add Server > Apache Tomcat (aponte para a
+      pasta do Tomcat extraido; Tomcat 9/10/11).
+   b) File > Open Project > EstacionamentoWeb > botao Run (F6) e escolha o servidor
+      Tomcat. Abre http://localhost:8080/estacionamento/
+   Se a porta 8080 estiver ocupada, altere a porta do Tomcat em Services > Servers.
